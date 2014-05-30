@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Event Togather</string>
+    <string name="action_settings">Settings</string>
+        <string name="checklist">Checklist</string>
+            <string name="info">Information</string>
+                <string name="chat">Chat</string>
+    <string name="hello">"Map of Event</string>
+    <string name="follow"> </string>
+    <string name="input_hint">Enter a Task</string>
+    <string name="submit_button">Submit</string>
+    <string name="title_activity_login">Log In</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">Register</string>
+    <string name="action_logout">Logout</string>
+    <string name="username">Username:</string>
+    <string name="sign_up_label">Sign Up</string>
+    <string name="password_label">Password:</string>
+    <string name="already_have_an_account_label">Log In</string>
+    <string name="sign_in_label">Sign In</string>
+    <string name="dont_have_an_account_label">Register as a New User</string>
+    
+</resources>

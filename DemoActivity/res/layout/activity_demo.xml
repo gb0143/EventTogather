@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity" >
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:dragView="@+id/name"
+        sothree:panelHeight="68dp"
+        sothree:paralaxOffset="100dp"
+        sothree:shadowHeight="4dp" >
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:windowSoftInputMode="adjustResize"
+            tools:context=".MainActivity" >
+
+            <!--
+    This title strip will display the currently visible page title, as well as the page
+    titles for adjacent pages.
+            -->
+
+            <android.support.v4.view.PagerTitleStrip
+                android:id="@+id/pager_title_strip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="#33b5e5"
+                android:paddingBottom="4dp"
+                android:paddingTop="50dp"
+                android:textColor="#fff" />
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#43c0fa"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical" >
+			
+           <LinearLayout 
+       
+        		android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+       		>
+            
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:src="@drawable/up" />
+ 
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Large Text"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/follow"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/cal" />
+            </LinearLayout>
+
+             <fragment
+     android:id="@+id/map"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     class="com.google.android.gms.maps.MapFragment"    
+     />  
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>
